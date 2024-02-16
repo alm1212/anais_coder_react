@@ -12,7 +12,7 @@ function App() {
     <>
     <h1>Eben-ezer</h1>
     <NavBar />
-    <ItemListContainer greeting="Bienvenido(a) a nuestra Academia Online Eben-ezer"/>    
+    <ItemListContainer greeting="Bienvenido(a) "/>    
     </>
   )
 }
