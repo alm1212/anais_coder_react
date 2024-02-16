@@ -1,6 +1,6 @@
 const ItemListContainer = (props) =>  {
     return (
-        <h1>{props.greeting}</h1>
+        <h1 style={{color:props.color}} >{props.greeting}</h1>
     ) 
 }
 

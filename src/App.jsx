@@ -12,7 +12,7 @@ function App() {
     <>
     <h1>Eben-ezer</h1>
     <NavBar />
-    <ItemListContainer greeting="Bienvenido(a) "/>    
+    <ItemListContainer greeting="Bienvenido(a)" color="violet"/>    
     </>
   )
 }
