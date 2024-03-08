@@ -1,10 +1,7 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './componentes/NavBar/NavBar';
-//import CartWidget from './componentes/CartWidget/CartWidget';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemdetailContainer';
 
 function App() {
 
@@ -12,7 +9,8 @@ function App() {
     <>
     <h1>Eben-ezer</h1>
     <NavBar />
-    <ItemListContainer greeting="Bienvenido(a)" color="violet"/>    
+    <ItemListContainer greeting="Listado de cursos" color="pink"/> 
+    <ItemDetailContainer/>
     </>
   )
 }

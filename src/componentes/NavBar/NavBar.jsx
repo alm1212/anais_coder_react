@@ -15,13 +15,15 @@ const NavBar = () => {
                         Cursos Online
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="#">Programación Frontend</a></li>
-                        <li><a className="dropdown-item" href="#">Programación Backend</a></li>
-                        <li><a className="dropdown-item" href="#">Diseño UX/UI</a></li>
-                        <li><hr className="dropdown-divider"/></li>
-                        <li><a className="dropdown-item" href="#">Inglés</a></li>
-                        <li><a className="dropdown-item" href="#">Italiano</a></li>
-                        <li><a className="dropdown-item" href="#">Portugués</a></li>
+                        <li style={{fontWeight: "bold", marginLeft:"8px"}}>Frontend</li>
+                        <li><a className="dropdown-item" href="#">React</a></li>
+                        <li><a className="dropdown-item" href="#">JavaScript</a></li>
+                        <li><a className="dropdown-item" href="#">Css</a></li>
+                        <li><a className="dropdown-item" href="#">Html</a></li>
+                        <li style={{fontWeight: "bold", marginLeft:"8px"}}><hr className="dropdown-divider"/> Backend</li>
+                        <li><a className="dropdown-item" href="#">Java</a></li>
+                        <li><a className="dropdown-item" href="#">NodeJs</a></li>
+                        <li><a className="dropdown-item" href="#">C#</a></li>
                     </ul>
                     </li>
                 </ul>
