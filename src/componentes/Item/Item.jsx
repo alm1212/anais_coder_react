@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom"
 
 
-const Item = ({name, price, category, img, stock}) => {
+const Item = ({id, name, price, category, img, stock}) => {
+
+
   return (
     <article style={{borderStyle:"inset", borderRadius:"10px", margin:"8px"}}>
         <h1 style={{marginTop:"10px"}}>{name}</h1>
@@ -8,7 +11,7 @@ const Item = ({name, price, category, img, stock}) => {
         <p>Categoría: {category}</p>
         <p>Capacidad: {stock}</p>        
         <h2>$ {price} UYU</h2>        
-        <button style={{margin:"8px"}}>Ver detalle</button>
+        <Link to={`/detail/${id}`} style={{borderStyle:"inset", borderRadius:"12px", padding:"2px"}} >Ver detalle</Link>
     </article>
   )
 }

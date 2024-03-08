@@ -1,10 +1,11 @@
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Academia</a>
+                <Link to={"/"} style={{fontWeight: "bold", marginLeft:"8px"}}>Academia</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -15,15 +16,16 @@ const NavBar = () => {
                         Cursos Online
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li style={{fontWeight: "bold", marginLeft:"8px"}}>Frontend</li>
-                        <li><a className="dropdown-item" href="#">React</a></li>
-                        <li><a className="dropdown-item" href="#">JavaScript</a></li>
-                        <li><a className="dropdown-item" href="#">Css</a></li>
-                        <li><a className="dropdown-item" href="#">Html</a></li>
-                        <li style={{fontWeight: "bold", marginLeft:"8px"}}><hr className="dropdown-divider"/> Backend</li>
-                        <li><a className="dropdown-item" href="#">Java</a></li>
-                        <li><a className="dropdown-item" href="#">NodeJs</a></li>
-                        <li><a className="dropdown-item" href="#">C#</a></li>
+                        <Link to={"/category/Frontend"} style={{fontWeight: "bold", marginLeft:"8px"}}>Frontend</Link>
+                        {/* <li><a className="dropdown-item" href="#">React</a></li> */}
+                        <li style={{marginLeft:"12px"}}>React</li>
+                        <li style={{marginLeft:"12px"}}>JavaScript</li>
+                        <li style={{marginLeft:"12px"}}>Css</li>
+                        <li style={{marginLeft:"12px"}}>Html</li>
+                        <Link to={"/category/Backend"} style={{fontWeight: "bold", marginLeft:"8px"}}> Backend</Link>
+                        <li style={{marginLeft:"12px"}}>Java</li>
+                        <li style={{marginLeft:"12px"}}>NodeJs</li>
+                        <li style={{marginLeft:"12px"}}>C#</li>
                     </ul>
                     </li>
                 </ul>
