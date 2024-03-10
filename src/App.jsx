@@ -14,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer greeting="Listado de cursos" color="pink"/> }/>
         <Route path="/category/:categoryId" element={<ItemListContainer greeting="Cursos por categoría" color="pink"/> }/>
-        <Route path="/detail/:productId" element={<ItemDetailContainer/>}/>  
+        <Route path="/detail/:productoId" element={<ItemDetailContainer/>}/>  
+        <Route path="*" element={<img src={"../src/images/ruta_no_encontrada/pagina-no-encontrada-404.jpg"} style={{marginTop:"100px"}}/>}/>
       </Routes>
     </BrowserRouter>
     </>

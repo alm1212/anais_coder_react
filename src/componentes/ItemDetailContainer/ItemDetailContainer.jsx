@@ -4,19 +4,19 @@ import NuevoItemDetail from "../NuevoItemDetail/NuevoItemDetail";
 import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
+    const [product, setProduct] = useState();
 
-    const [product, setProduct] = useState(null);
-    const {productId} = useParams()
+    const {productoId} = useParams()
 
     useEffect( ()=> {
-        getProductById(productId)
-            .then( res => {
-                setProduct(res) 
+        getProductById(productoId)
+            .then((res) => {
+                setProduct(res[0])
             })
             .catch( error => {
                 console.log(error)
             })
-    }, [productId])
+    }, [productoId])
 
   return (
     <div>
